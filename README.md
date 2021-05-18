@@ -1,16 +1,34 @@
 # github_ci_nbconvert
 
-Access to notebooks:
+## TODO
 
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/salihmarangoz/github_ci_nbconvert/build/image_compression_with_svd.html
+- Render only modified ipynb files.
+
+  
+
+## Create a Build Branch
+
+```
+git clone YOUR_REPOSITORY
+git checkout -b build
+git push origin build
+```
 
 
 
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/salihmarangoz/github_ci_nbconvert/build/pca_dimension_reduction.html
+## Enable Github Pages
+
+`Settings` -> `Pages` -> Select `branch: build` and `/ (root)`
+
+No need to choose a theme.
 
 
 
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/salihmarangoz/github_ci_nbconvert/build/another_dir/numerical_optimization.html
+## Access to the Notebooks
 
+https://salihmarangoz.github.io/github_ci_nbconvert/image_compression_with_svd.html
 
+https://salihmarangoz.github.io/github_ci_nbconvert/pca_dimension_reduction.html
+
+https://salihmarangoz.github.io/github_ci_nbconvert/another_dir/numerical_optimization.html
 

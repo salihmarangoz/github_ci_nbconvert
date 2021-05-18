@@ -29,16 +29,19 @@ jobs:
         run: pip install nbconvert
         
       - name: Convert to html
-        run: jupyter nbconvert --to html build/pca_dimension_reduction.ipynb
+        run: jupyter nbconvert --to html notebooks/pca_dimension_reduction.ipynb
 
       - name: testing
         run: pwd
+
+      - name: testing2
+        run: ls notebooks
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
-          FOLDER: build # The directory where your assets are generated
+          FOLDER: notebooks # The directory where your assets are generated
           BRANCH: build # The branch name where you want to push the assets
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message

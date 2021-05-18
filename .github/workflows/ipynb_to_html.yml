@@ -28,8 +28,8 @@ jobs:
       - name: Install nbconvert
         run: pip install nbconvert
         
-      - name: Convert to html
-        run: jupyter nbconvert --to html notebooks/*.ipynb
+      - name: Convert all ipynb files to html
+        run: find . -type f -execdir jupyter nbconvert --to html *.ipynb {} \;
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop

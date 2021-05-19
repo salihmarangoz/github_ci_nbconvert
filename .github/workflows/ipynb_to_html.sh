@@ -1,3 +1,1 @@
-
-MAIN_DIR=$(pwd)
-echo $(git diff --name-only HEAD HEAD~1)
+find . -name '*.ipynb' -type f -execdir jupyter nbconvert --template classic --to html {} \;

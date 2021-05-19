@@ -27,10 +27,7 @@ jobs:
 
       - name: Install nbconvert
         run: pip install nbconvert
-
-      - name: Install git
-        run: sudo apt install git
-        
+  
       - name: Convert all ipynb files to html
         run: bash .github/workflows/ipynb_to_html.sh
 

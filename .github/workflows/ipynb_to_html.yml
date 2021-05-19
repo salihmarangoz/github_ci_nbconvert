@@ -39,3 +39,4 @@ jobs:
           BRANCH: build # The branch name where you want to push the assets
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
+          SQUASH_HISTORY: true # If set to true, all previous commits on the target branch will be discarded. For example, if you are deploying a static site with lots of binary artifacts, this can help the repository becoming overly bloated.

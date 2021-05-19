@@ -1,1 +1,0 @@
-find . -name '*.ipynb' -type f -execdir jupyter nbconvert --template classic --to html {} \;

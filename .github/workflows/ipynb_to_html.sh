@@ -1,4 +1,3 @@
 
 MAIN_DIR=$(pwd)
-git --version
-git diff --name-only HEAD^!
+echo $(git diff --name-only HEAD HEAD~1 --)

@@ -1,6 +1,9 @@
 # github_ci_nbconvert
 
-Why? Because Github renderer sometimes doesn't load the content. `nbviewer.jupyter.org` usually cache the rendered content and will not discard it for a long time. With this method, rendered HTML files will be pushed to `build` branch and these files will be publicly available to view.
+Why? Because Github renderer sometimes doesn't load the content. `nbviewer.jupyter.org` usually cache the rendered content and will not discard it for a long time. With this method, rendered HTML files will be pushed to `build` branch and these files will be publicly available to view. Additionally;
+
+- `build` branch will not track history, so frequently updates will not be a problem.
+- `*.ipynb` files will be deleted on the `build` branch saving disk space.
 
 ## Create a Build Branch
 

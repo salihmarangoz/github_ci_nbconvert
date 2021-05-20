@@ -29,6 +29,8 @@ No need to choose a theme.
 
 This doesn't run well if notebooks are in the root directory. Only the notebooks directory will be published so put all images/notebooks/etc files into this folder. 
 
+- Don't forget to put `.github/workflows/ipynb_to_html.yml` as done in this repository.
+
 - Rendered HTML files are here: https://github.com/salihmarangoz/github_ci_nbconvert/tree/build
 
 
